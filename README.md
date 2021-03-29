@@ -49,10 +49,8 @@ _________
     - `Vpp` to see the code
     - `:db address` to set a breakpoint
         - `:dc` to continue
-_____________
 ## Buffer Overflow
 _____________
- bytes
 * This is used to overrwrite existing local variables
 * WHEN TO USE: if gets is used to get data in the executable 
 * Find the local variable that you want to overwrite using r2 (it will look like `var int64_t var_20h @ rbp-0x20`)
@@ -65,7 +63,6 @@ _______________
 * Arguments go ebx, ecx, edx, esi, edi, ebp in that order
 ## ROP Chaining
 ___________________
-#### 
 #### All relevant instructions and the order to use them in:
 1. Use `file filename` to see what type of file it is, how it was compiled, and whether it was stripped
     * If file is not stripped:
@@ -97,7 +94,6 @@ ___________________
     ```
 ## GOT PLT Linking & Exploiting
 _________
-6
 All relevant instructions and the order to use them in:
 1. Use `ldd filename` to get the location of libc (will look like `libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6`)
 ## Homeworks

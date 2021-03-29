@@ -42,7 +42,6 @@ ____________________
     - Use `elf.got` to get the values inside of the GOT
 ## Radare2
 _________
- to continue
 * Look at the assembly of an executable using `r2 -Ad filename`
     - `s function_name` or `s memory_address`
         * usually use `s main`

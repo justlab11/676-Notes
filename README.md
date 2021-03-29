@@ -140,8 +140,6 @@ int main(void) {
 #include <iostream>
 #include <Eigen/Dense>
 
-// I wanted to use opencv, but it took 3 hours to build to 78% then crashed
-
 using Eigen::MatrixXd;
 using namespace std;
 
@@ -175,7 +173,7 @@ def to_bytes(op, val)->bytes:
         return [int(i) for i in str(val)[2:-1].strip("][").split(", ")]
 
 def main()->int:
-    p = remote("167.172.231.203", 8888)
+    p = remote("ip", 8888)
     count = 0
     for i in range(100):
         s = p.recvuntil(b'@@@@@', timeout=10)

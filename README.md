@@ -106,7 +106,7 @@ ___________________
     
 #### Application:
 * 32-bit:
-    * ```python
+    ```python
     from pwn import *
     offset = 44 # it's usually 44, but it might not be
     function_address = ___
@@ -115,7 +115,7 @@ ___________________
     inject = b"a" * p32(offset) + p32(function_address) + p32(pop_address) + p32(argument)
     ```
 * 64-bit:
-    * ```python
+    ```python
     from pwn import *
     offset = 40 # it's usually 40, but it might not be
     function_address = ___
